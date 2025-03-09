@@ -1,3 +1,10 @@
+/* PC */
+.mobile-header {
+    display: none;
+}
+.footer {
+    display: none;
+}
 @font-face {
     font-family: 'Rubik';
     src: url('weather forecast web application\fonts\Rubik-Italic-VariableFont_wght.ttf');
@@ -93,4 +100,190 @@ body {
 .main_text li,
 .extra-text li {
     line-height: 57px; 
+}
+/* MOBILE */
+@media (max-width: 1024px) {
+    body {
+        height: 100vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        background-color: #42C2FF;
+        overflow: hidden;
+    }
+    .mobile-header {
+        display: block;
+        height: 72vh; 
+        position: relative;
+        z-index: 2;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .mobile-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 60px;
+    }
+
+    .mobile-header__search {
+        border-radius: 18px;
+        width: 300px; 
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(225deg, #f2fbff 0%, rgba(242, 251, 255, 0.3) 100%);
+        opacity: 0.5;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    #mobile-search {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        outline: none;
+    }
+
+    .mobile-header__text {
+        margin-top: 90px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .mobile-header__main-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 19px;
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 52px;
+        background: #e8fcff;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .mobile-header__main-text li:nth-child(2) {
+        margin-top: 30px; 
+        margin-bottom: 30px;;
+    }
+    .mobile-header__main-text li:nth-child(3) {
+        font-size: 25px;
+    }
+
+    .mobile-header__extra-text {
+        margin-top: 154px; 
+        margin-bottom: 58px;
+        font-family: "Rubik";
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        color: #e8fcff;
+    }
+    .footer-container {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 28vh;
+        bottom: 0;
+        left: 0;
+        background-color: #e8fcff;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-menu {
+        margin-top: 35px;
+        width: 100%;
+    }
+
+    .footer-menu-text {
+        text-align: center;
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(72, 115, 141, 0.8);
+        margin-bottom: 45px;
+    }
+
+    .days-list {
+        margin-left: 35px;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 25px;
+    }
+
+    .weather__container {
+        display: flex;
+        gap: 20px; 
+    }
+
+    .weather__container ul {
+        flex: 0 0 auto; 
+    }
+    .weather-card {
+        width: 61px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: center;
+        text-align: center;
+        background: #42C2FF;
+        border-radius: 15px;
+        padding: 10px 0; 
+    }
+    
+    .weather-card li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        line-height: 1.5;
+        padding: 5px 0; 
+    }
+    
+    .weather-card li:first-child {
+        padding-top: 1px; 
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 5px;
+        color: #e8fcff;
+    }
+    
+    .weather-card li:last-child {
+        padding-bottom: 1px; 
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 5px;
+        color: #e8fcff;
+    }
 }
