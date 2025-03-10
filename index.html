@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/weather forecast web application/reset.css">
-    <link rel="stylesheet" href="/weather forecast web application/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Weather</title>
 </head>
 <body style="background-color: #42C2FF;">
     <header class="mobile-header">
         <div class="mobile-container header__mobile-container">
             <div class="mobile-header__search">
-                <input id="mobile-search" type="text" placeholder="Search">
+                <input id="mobile-search" type="text" placeholder="Search" class="global-search">
                 <span class="mobile-search-icon">
-                    <img src="/weather forecast web application/images/pc/streamline-icon-interface-search@48x48 1.svg" alt="Search icon">
+                    <img src="images/pc/streamline-icon-interface-search@48x48 1.svg" alt="Search icon">
                 </span>
             </div>
             <div class="mobile-header__text">
                 <div class="mobile-header__main-text">
                     <ul>
-                        <li class="mobile-header__main-text-first">Temperature</li>
-                        <li><img src="/weather forecast web application/images/mobile/header/ .svg" alt=""></li>
-                        <li class="mobile-header__main-text-second">Sunny</li>
+                        <li id="mob-temp" class="mobile-header__main-text-first">Temperature</li>
+                        <li><img id="mob-header-picture" src="images/mobile/header/ .svg" alt=""></li>
+                        <li id="mob-weather" class="mobile-header__main-text-second">Sunny</li>
                     </ul>
                 </div>
                 <div class="mobile-header__extra-text">
                     <ul>
-                        <li>Day</li>
-                        <li>Date</li>
+                        <li id="mobile-day">Day</li>
+                        <li id="mobile-date">Date</li>
                     </ul>
                 </div>
             </div>
@@ -35,27 +35,27 @@
     </header>
     <header class="header">
         <span class="weather-icon">
-            <img src="/weather forecast web application/images/pc/sun-dynamic-color 1.svg" alt="sun" class="background-svg">
+            <img src="images/pc/sun-dynamic-color 1.svg" alt="sun" class="background-svg">
         </span>
         <div class="container header__container">
             <div class="header__search">
-                <input id="search" type="text" placeholder="Search">
+                <input id="search" type="text" placeholder="Search" class="global-search">
                 <span class="search-icon">
-                    <img src="/weather forecast web application/images/pc/streamline-icon-interface-search@48x48 1.svg" alt="Search icon">
+                    <img src="images/pc/streamline-icon-interface-search@48x48 1.svg" alt="Search icon">
                 </span>
             </div>
             <div class="text__header">
                 <div class="main_text">
                     <ul>
-                        <li>City</li>
-                        <li>temperature</li>
-                        <li>weather</li>
+                        <li id="pc-city">City</li>
+                        <li id="pc-temp">temperature</li>
+                        <li id="pc-weather">weather</li>
                     </ul>
                 </div>
                 <div class="extra-text">
                     <ul>
-                        <li>Humidity: </li>
-                        <li>Wind Speed: </li>
+                        <li id="pc-humidity">Humidity: </li>
+                        <li id="wind">Wind Speed: </li>
                     </ul>
                 </div>
             </div>
@@ -73,37 +73,37 @@
                                     <div class="weather__container">
                                         <ul class="weather-card">
                                             <li>Day</li>
-                                            <li><img src="/weather forecast web application/images/mobile/footer/26 1.svg" alt=""></li>
+                                            <li><img src="images/mobile/footer/26 1.svg" alt=""></li>
                                             <li>tmp</li>
                                         </ul>
                                         <ul class="weather-card">
                                             <li>Day</li>
-                                            <li><img src="/weather forecast web application/images/mobile/footer/26 1.svg" alt=""></li>
+                                            <li><img src="images/mobile/footer/26 1.svg" alt=""></li>
                                             <li class="weather-card-tmp">tmp</li>
                                         </ul>
                                         <ul class="weather-card">
                                             <li>Day</li>
-                                            <li><img src="/weather forecast web application/images/mobile/footer/26 1.svg" alt=""></li>
+                                            <li><img src="images/mobile/footer/26 1.svg" alt=""></li>
                                             <li class="weather-card-tmp">tmp</li>
                                         </ul>
                                         <ul class="weather-card">
                                             <li>Day</li>
-                                            <li><img src="/weather forecast web application/images/mobile/footer/26 1.svg" alt=""></li>
+                                            <li><img src="images/mobile/footer/26 1.svg" alt=""></li>
                                             <li class="weather-card-tmp">tmp</li>
                                         </ul>
                                         <ul class="weather-card">
                                             <li>Day</li>
-                                            <li><img src="/weather forecast web application/images/mobile/footer/26 1.svg" alt=""></li>
+                                            <li><img src="images/mobile/footer/26 1.svg" alt=""></li>
                                             <li class="weather-card-tmp">tmp</li>
                                         </ul>
                                         <ul class="weather-card">
                                             <li>Day</li>
-                                            <li><img src="/weather forecast web application/images/mobile/footer/26 1.svg" alt=""></li>
+                                            <li><img src="images/mobile/footer/26 1.svg" alt=""></li>
                                             <li class="weather-card-tmp">tmp</li>
                                         </ul>
                                         <ul class="weather-card">
                                             <li>Day</li>
-                                            <li><img src="/weather forecast web application/images/mobile/footer/26 1.svg" alt=""></li>
+                                            <li><img src="images/mobile/footer/26 1.svg" alt=""></li>
                                             <li class="weather-card-tmp">tmp</li>
                                         </ul>
                                     </div>
@@ -116,5 +116,5 @@
         </div>
     </footer>
 </body>
-<script src="/weather forecast web application/script.js"></script>
+<script src="js/script.js"></script>
 </html>

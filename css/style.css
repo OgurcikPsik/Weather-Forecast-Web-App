@@ -49,11 +49,13 @@ body {
     height: 100%;
     background: transparent; 
     outline: none;
+    color: #263b44;
+    font-size: 28px;
 }
 #search::placeholder {
     font-family:'Rubik';
     font-weight: 400;
-    font-size: 15px;
+    font-size: 28px;
     color: #97a0b9;
     text-align: left;
 }
@@ -250,7 +252,7 @@ body {
         flex: 0 0 auto; 
     }
     .weather-card {
-        width: 61px;
+        width: 65px;
         height: 100px;
         display: flex;
         flex-direction: column;
